@@ -1,0 +1,9 @@
+version: "2"
+
+services:
+  app:
+    build:
+      context: .
+    command: "bundle exec puma config.ru"
+    ports:
+      - "9292:9292"
