@@ -1,3 +1,3 @@
-require "./app"
+require "./app/router"
 
-run App.freeze.app
+run App::Router.freeze.app
