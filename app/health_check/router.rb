@@ -7,8 +7,8 @@ module App
         "health_check"
       end
 
-      route do |r|
-        r.get do
+      route do |router|
+        router.get do
           "Application is healthy and running"
         end
       end

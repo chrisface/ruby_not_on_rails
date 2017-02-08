@@ -4,17 +4,17 @@ require_relative "health_check/router"
 
 module App
   class Router < Roda
-    route do |r|
-      r.root do
-        r.redirect App::HelloWorld::Router.namespace
+    route do |router|
+      router.root do
+        router.redirect App::HelloWorld::Router.namespace
       end
 
-      r.on App::HelloWorld::Router.namespace do
-        r.run App::HelloWorld::Router
+      router.on App::HelloWorld::Router.namespace do
+        router.run App::HelloWorld::Router
       end
 
-      r.on App::HealthCheck::Router.namespace do
-        r.run App::HealthCheck::Router
+      router.on App::HealthCheck::Router.namespace do
+        router.run App::HealthCheck::Router
       end
     end
   end

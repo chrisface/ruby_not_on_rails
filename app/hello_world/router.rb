@@ -7,8 +7,8 @@ module App
         "hello"
       end
 
-      route do |r|
-        r.get do
+      route do |router|
+        router.get do
           "Hello!"
         end
       end
