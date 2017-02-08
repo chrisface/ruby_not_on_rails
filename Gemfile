@@ -6,4 +6,5 @@ gem "roda"
 
 group :development do
   gem "reek", require: false
+  gem "rubocop", require: false
 end
