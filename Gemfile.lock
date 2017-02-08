@@ -1,16 +1,43 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    ast (2.3.0)
+    axiom-types (0.1.1)
+      descendants_tracker (~> 0.0.4)
+      ice_nine (~> 0.11.0)
+      thread_safe (~> 0.3, >= 0.3.1)
+    codeclimate-engine-rb (0.4.0)
+      virtus (~> 1.0)
+    coercible (1.0.0)
+      descendants_tracker (~> 0.0.1)
+    descendants_tracker (0.0.4)
+      thread_safe (~> 0.3, >= 0.3.1)
+    equalizer (0.0.11)
+    ice_nine (0.11.2)
+    parser (2.3.3.1)
+      ast (~> 2.2)
     puma (3.7.0)
     rack (2.0.1)
+    rainbow (2.2.1)
+    reek (4.5.5)
+      codeclimate-engine-rb (~> 0.4.0)
+      parser (~> 2.3.1, >= 2.3.1.2)
+      rainbow (~> 2.0)
     roda (2.22.0)
       rack
+    thread_safe (0.3.5)
+    virtus (1.0.5)
+      axiom-types (~> 0.1)
+      coercible (~> 1.0)
+      descendants_tracker (~> 0.0, >= 0.0.3)
+      equalizer (~> 0.0, >= 0.0.9)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   puma
+  reek
   roda
 
 BUNDLED WITH
